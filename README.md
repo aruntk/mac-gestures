@@ -64,4 +64,4 @@ To reflect SHMConfig, restart your session.
     sudo cp gestures.sh /etc/profile/
     
     
-
+Thanks to [iberianpig](https://github.com/iberianpig) for the xSwipe module
