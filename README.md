@@ -59,9 +59,9 @@ Open /etc/X11/xorg.conf.d/50-synaptics.conf with your favorite text editor and e
 
 To reflect SHMConfig, restart your session.
 
-##### copy gestures.sh  to /etc/profile
+##### copy gestures.sh  to /etc/profile.d
 
-    sudo cp gestures.sh /etc/profile/
+    sudo cp gestures.sh /etc/profile.d/
     
     
 Thanks to [iberianpig](https://github.com/iberianpig) for the xSwipe module
