@@ -26,14 +26,14 @@ Install smart-comments perl module
 ##### Install older version synaptics driver that is compatible with xSwipe.
 
 ```bash
-$ sudo apt-get install -y git build-essential libevdev-dev autoconf automake libmtdev-dev xorg-dev xutils-dev libtool
-$ sudo apt-get remove -y xserver-xorg-input-synaptics
-$ git clone https://github.com/Chosko/xserver-xorg-input-synaptics.git
-$ cd xserver-xorg-input-synaptics
-$ ./autogen.sh
-$ ./configure --exec_prefix=/usr
-$ make
-$ sudo make install
+sudo apt-get install -y git build-essential libevdev-dev autoconf automake libmtdev-dev xorg-dev xutils-dev libtool
+sudo apt-get remove -y xserver-xorg-input-synaptics
+git clone https://github.com/Chosko/xserver-xorg-input-synaptics.git
+cd xserver-xorg-input-synaptics
+./autogen.sh
+./configure --exec_prefix=/usr
+make
+sudo make install
 ```
 ---
 
@@ -41,10 +41,11 @@ $ sudo make install
 
 Open /etc/X11/xorg.conf.d/50-synaptics.conf with your favorite text editor and edit it to enable SHMConfig
 
-    $ sudo gedit /etc/X11/xorg.conf.d/50-synaptics.conf
+    sudo gedit /etc/X11/xorg.conf.d/50-synaptics.conf
 
 **NOTE**:You will need to create the /etc/X11/xorg.conf.d/ directory and create 50-synaptics.conf if it doesn't exist yet.
-     `$ sudo mkdir /etc/X11/xorg.conf.d/`
+    
+    `sudo mkdir /etc/X11/xorg.conf.d/`
 
 ##### /etc/X11/xorg.conf.d/50-synaptics.conf
 
